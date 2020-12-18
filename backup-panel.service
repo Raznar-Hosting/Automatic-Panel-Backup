@@ -1,0 +1,11 @@
+[Unit]
+Description=Automatic Backup Panel
+
+[Service]
+Type=simple
+Restart=on-failure
+User=root
+ExecStart=/bin/sh /backup01/panel/backup-panel.sh
+
+[Install]
+WantedBy=multi-user.target

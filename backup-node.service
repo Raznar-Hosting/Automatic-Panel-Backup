@@ -1,0 +1,11 @@
+[Unit]
+Description=Automatic Backup Node
+
+[Service]
+Type=simple
+Restart=on-failure
+User=root
+ExecStart=/bin/sh /backup01/node/backup-node.sh
+
+[Install]
+WantedBy=multi-user.target
