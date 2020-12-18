@@ -1,6 +1,6 @@
 #!/bin/sh
 clear
-echo "Copyright (C) 2020, Raznar Lab, or Its Associates, All Rights Reserved."
+echo "Copyright (C) 2020, Raznar Lab, or its associates, All Rights Reserved."
 echo "Do you want to automatically backup your panel or nodes?"
 select pn in "Panel" "Nodes"; do
 	case $pn in
