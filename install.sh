@@ -20,9 +20,9 @@ do
 			else
 				cp -r ./backup-panel.service /etc/systemd/system/
 			fi	
+			chmod +x /backup01/panel/*
 			systemctl enable backup-panel --now
 			systemctl start backup-panel
-			chmod +x /backup01/panel/*
 			break;;
 		Node ) 
 			if [ -f /backup01/node/ ]; then
@@ -39,9 +39,9 @@ do
 			else 
 				cp -r ./backup-node.service /etc/systemd/system
 			fi
+			chmod +x /backup01/node/*
 			systemctl enable backup-node --now
 			systemctl start backup-node
-			chmod +x /backup01/node/*
 			break;;
 	esac
 done
